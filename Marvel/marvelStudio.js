@@ -79,5 +79,5 @@ function stay() {
 }
 
 function directHomePage() {
-    window.location.href = `../HomePage/home.html`;
+    window.location.href = `../home.html`;
 }
