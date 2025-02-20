@@ -92,4 +92,8 @@
     .div-master {
         margin-left: 0px;
     }
+
+    .flex-box {
+        width: 99%;
+    }
 }
