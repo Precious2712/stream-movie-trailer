@@ -102,7 +102,7 @@ function handleGetId(id) {
     // console.log('selectedMovieId', JSON.stringify(selectedMovieId.extra));
     localStorage.setItem('movieId', JSON.stringify(selectedMovieId.extra));
 
-    window.location.href = `../moviePage/moviepage.html`;
+    window.location.href = `./moviePage/moviepage.html`;
 }
 
 window.handleGetId = handleGetId;
@@ -135,7 +135,7 @@ function handleSelectComedy(id) {
 
     // console.log('selectedComedyId', JSON.stringify(selectedComedyId.extra));
     localStorage.setItem('comedyId', JSON.stringify(selectedComedyId.extra));
-    window.location.href = `../comedy/comedyPage.html`;
+    window.location.href = `./comedy/comedyPage.html`;
 }
 
 window.handleSelectComedy = handleSelectComedy;
@@ -169,7 +169,7 @@ const handleSelectDisney = (id) => {
         // console.log('selectedDisneyId', JSON.stringify(selectedDisneyId.extra));
         localStorage.setItem('disneyId', JSON.stringify(selectedDisneyId.extra));
         console.log('Redirecting to Disney page...');
-        window.location.href = `../disneyWorld/disney.html`;
+        window.location.href = `./disneyWorld/disney.html`;
         return;
     }
 };
@@ -205,7 +205,7 @@ function handleSelectMarvel(id) {
         // console.log('selectedMarvelId', JSON.stringify(selectedMarvelId.extra));
         localStorage.setItem('marvelId', JSON.stringify(selectedMarvelId.extra));
         console.log('Redirecting to Marvel page...');
-        window.location.href = `../marvel/marvel.html`;
+        window.location.href = `./marvel/marvel.html`;
         return;
     }
 };
@@ -238,7 +238,7 @@ function handleSelectRate(id) {
         // console.log('selectedRateId', JSON.stringify(selectedRateId.extra));
         localStorage.setItem('rateId', JSON.stringify(selectedRateId.extra));
         console.log('Redirecting to Rate page...');
-        window.location.href = `../topRated/rated.html`;
+        window.location.href = `./topRated/rated.html`;
         return;
     }
 };
@@ -272,7 +272,7 @@ function handleSelectInMaking(id) {
         // console.log('selectedInMakingId', JSON.stringify(selectedInMakingId.extra));
         localStorage.setItem('inMakingId', JSON.stringify(selectedInMakingId.details));
         console.log('Redirecting to InMaking page...');
-        window.location.href = `../upcomingFolder/upcomingMovies.html`;
+        window.location.href = `./upcomingFolder/upcomingMovies.html`;
         return;
     }
 };
@@ -284,7 +284,7 @@ async function logUserOut() {
     try {
         await signOut(auth);
         console.log("User signed out successfully!");
-        window.location.href = '../Login/loginPage.html';
+        window.location.href = './Login/loginPage.html';
     } catch (error) {
         console.error("Error signing out:", error.message);
     }
