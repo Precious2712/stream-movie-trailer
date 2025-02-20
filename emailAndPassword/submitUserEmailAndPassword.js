@@ -26,7 +26,7 @@ async function handleSubmitEmailAndPassword(e) {
         console.log("User created:", submitData.user);
         alert('Your account has been successfully created');
         if (submitData) {
-            window.location.href = '../HomePage/home.html'
+            window.location.href = '../index.html'
             return
         };
         userData.reset();
