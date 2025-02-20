@@ -48,7 +48,7 @@ async function userLogIn(e) {
 
         localStorage.setItem("userLoggedIn", "true");
 
-        window.location.href = '../HomePage/home.html';
+        window.location.href = '../index.html';
     } catch (error) {
         console.error(error);
         alert(error.message);
