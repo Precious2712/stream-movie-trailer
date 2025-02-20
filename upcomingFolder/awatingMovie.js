@@ -110,5 +110,5 @@ function stay() {
 }
 
 function directHomePage() {
-    window.location.href = `../home.html`;
+    window.location.href = `../index.html`;
 }

@@ -77,7 +77,7 @@ function openModal() {
 }
 
 function directHomePage() {
-    window.location.href = `../home.html`;
+    window.location.href = `../index.html`;
 }
 
 function stay() {
