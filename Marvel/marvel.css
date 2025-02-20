@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding-bottom: 30px;
+}
+
+.imgWithName h1 {
+    color: white;
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boxe h1 {
+    color: white;
+}
+
+.marv {
+    width: 100%;
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.sum p {
+    color: rgb(109, 122, 140);
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.boxe {
+    margin-top: 50px;
+}
+
+.boxe h1 {
+    text-decoration: underline;
+    color: rgb(109, 122, 140);
+}
+
+.summ {
+    margin-top: 10px;
+}
+
+.imgWithName {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+.imgWithName h1 {
+    text-decoration: underline;
+    color: rgb(109, 122, 140);
+}
+
+.cast p {
+    color: white;
+    text-align: center;
+}
+
+.cast img {
+    width: 150px;
+}
+
+.authors {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.backImg iframe {
+    width: 550px;
+}
+
+.roof {
+    margin-top: 70px;
+}
+
+.flex {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+svg {
+    color: red;
+}
+
+.flex p {
+    color: white;
+    margin-top: 4px;
+}
+
+.closeModal {
+    height: 20vh;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    display: flex;
+    border-radius: 16px;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.absol {
+    position: absolute;
+    /* bottom: 0; */
+    width: 30%;
+    left: 35%;
+}
+
+.btn {
+    display: flex;
+    gap: 12px;
+}
+
+.btn button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(95deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn button::before,
+.btn button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn button:hover {
+    background: linear-gradient(95deg, #0056b3, #003f7f);
+}
+
+.btn button:active {
+    transform: scale(0.95);
+}
+
+
+
+@media(max-width:655px) {
+    .boxe {
+        width: 73%;
+    }
+
+    .cast {
+        white-space: nowrap;
+        display: inline-block;
+        animation-name: sliders;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+    }
+
+    @keyframes sliders {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .backImg iframe {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .absol {
+        width: 83%;
+        left: 8%;
+    }
+
+}

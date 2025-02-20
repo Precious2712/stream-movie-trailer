@@ -1,0 +1,95 @@
+
+.body {
+    background-color: black;
+}
+
+.flex-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 115%;
+    height: 9vh;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+}
+
+#email {
+    background-color: rgb(251,203,26);
+}
+
+#facebook  i {
+    color: blue;
+}
+
+.cheveron {
+    cursor: pointer;
+}
+
+.cheveron i {
+    color: white;
+    cursor: pointer;
+}
+
+.account h1 {
+    color: white;
+    text-align: center;
+    /* margin-left: 40px; */
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left {
+    margin-left: 20px;
+}
+
+#right {
+    margin-right: 20px;
+}
+
+.mt {
+    margin-top: 40px;
+}
+
+.div-master p {
+    color: white;
+}
+
+.div-master {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.check {
+    display: flex;
+    gap: 8px;
+}
+
+.div-master span {
+    color: green;
+    cursor: pointer;
+}
+.mt a {
+    text-decoration: none;
+}
+
+
+
+@media(max-width: 640px) {
+    #left {
+        margin-left: 0px;
+    }
+
+    #right {
+        margin-right: 0px;
+    }
+
+    .div-master {
+        margin-left: 0px;
+    }
+}

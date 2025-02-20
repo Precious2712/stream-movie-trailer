@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming_Movies</title>
+    <link rel="stylesheet" href="../upcomingFolder/coming.css">
+</head>
+
+<body>
+
+    <div id="backgroundImg" class="background-container">
+
+        <div class="flexItem">
+            <div id="pathImg" class="pixel"></div>
+            <div id="detail" class="det"></div>
+        </div>
+
+    </div>
+
+    <div class="shrink">
+        <h1>Casts</h1>
+        <div id="castAndCrew" class="actors"></div>
+    </div>
+
+    <div id="iframe" class="frem"></div>
+
+
+    <div class="openModal">
+
+        <div onclick="openModal()" class="flex">
+            <p>Home</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="29">
+                <path fill="currentColor"
+                    d="M41.4 239l194.3-194.3c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L129.9 256l162.3 162.3c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L41.4 273c-9.4-9.4-9.4-24.6 0-34z" />
+            </svg>
+
+        </div>
+
+        <div hidden id="close" class="absol">
+            <div class="closeModal">
+                <p>Click YES to go back to Landing/Home Page</p>
+
+                <div class="btn">
+                    <button onclick="directHomePage()">Yes</button>
+                    <button onclick="stay()">No</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="../upcomingFolder/awatingMovie.js"></script>
+
+</html>

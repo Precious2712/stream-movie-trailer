@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topRated</title>
+    <link rel="stylesheet" href="../topRated/rated.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bodyDoc">
+    <div>
+        <div id="ratedMovies" class="div"></div>
+        <div class="boxe">
+            <h1>Overview</h1>
+            <div id="summary" class="summ"></div>
+        </div>
+    </div>
+
+    <div class="imgWithName">
+        <h1>Casts</h1>
+        <div class="shrink">
+            <div id="acts" class="authors"></div>
+        </div>
+    </div>
+
+    <div class="bos">
+        <div id="ratedTrailerMovies" class="vid"></div>
+    </div>
+
+    <div class="openModal">
+
+        <div onclick="openModal()" class="flex">
+            <p>Home</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="29">
+                <path fill="currentColor"
+                    d="M41.4 239l194.3-194.3c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L129.9 256l162.3 162.3c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L41.4 273c-9.4-9.4-9.4-24.6 0-34z" />
+            </svg>
+
+        </div>
+
+        <div hidden id="close" class="absol">
+            <div class="closeModal">
+                <p>Click YES to go back to Landing/Home Page</p>
+
+                <div class="btn">
+                    <button onclick="directHomePage()">Yes</button>
+                    <button onclick="stay()">No</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../topRated/movieRated.js"></script>
+
+</html>
