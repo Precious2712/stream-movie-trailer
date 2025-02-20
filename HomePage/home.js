@@ -297,6 +297,6 @@ onAuthStateChanged(auth, (user) => {
     console.log('user:', user);
     
     if (!user) {
-        window.location.href = "../SignUpPage/signInWithEmailAndPaaword.html";
+        window.location.href = "./SignUpPage/signInWithEmailAndPaaword.html";
     }
 });
