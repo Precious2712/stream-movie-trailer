@@ -71,7 +71,7 @@ let inMakingFilms = [];
 
 async function data() {
     try {
-        const response = await fetch('http://localhost:2000/api/v1/getAllMoviesInDataBase');
+        const response = await fetch('https://movieapi-f9s4.onrender.com/api/v1/getAllMoviesInDataBase');
 
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
@@ -110,7 +110,7 @@ window.handleGetId = handleGetId;
 
 async function comedyTv() {
     try {
-        const data = await fetch('http://localhost:2000/api/v2/getAllComedyMovies')
+        const data = await fetch('https://movieapi-f9s4.onrender.com/api/v2/getAllComedyMovies')
         const comedyMovies = await data.json();
         commdi = comedyMovies.comedies
         // console.log(commdi);
@@ -142,7 +142,7 @@ window.handleSelectComedy = handleSelectComedy;
 
 async function disneyEntertainment() {
     try {
-        const res = await fetch('http://localhost:2000/api/v1/getAllDisneyMovies');
+        const res = await fetch('https://movieapi-f9s4.onrender.com/api/v1/getAllDisneyMovies');
         const disneyMovies = await res.json();
         disnnycoll = disneyMovies.disney
         // console.log(disnnycoll);
@@ -179,7 +179,7 @@ window.handleSelectDisney = handleSelectDisney;
 
 async function marvelStudioCollections() {
     try {
-        const resData = await fetch('http://localhost:2000/api/v2/getMarvelCollectionsInDataBase')
+        const resData = await fetch('https://movieapi-f9s4.onrender.com/api/v2/getMarvelCollectionsInDataBase')
         const marvelData = await resData.json();
         marvels = marvelData.marvelStudio
         // console.log(marvels);
@@ -214,7 +214,7 @@ window.handleSelectMarvel = handleSelectMarvel;
 
 
 async function upComingRatedMovie() {
-    const res = await fetch('http://localhost:2000/api/v3/getTopRatedFilms');
+    const res = await fetch('https://movieapi-f9s4.onrender.com/api/v3/getTopRatedFilms');
     const topRatedMovies = await res.json();
     rate = topRatedMovies.movieRate
 
@@ -247,7 +247,7 @@ window.handleSelectRate = handleSelectRate;
 
 
 async function inMakingFilmsList() {
-    const res = await fetch('http://localhost:2000/api/v4/getUpAwaitingMovies');
+    const res = await fetch('https://movieapi-f9s4.onrender.com/api/v4/getUpAwaitingMovies');
     const moviesInMaking = await res.json();
     inMakingFilms = moviesInMaking.upcomingMovies
     console.log(inMakingFilms);
