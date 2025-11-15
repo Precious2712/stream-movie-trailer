@@ -24,17 +24,12 @@ body {
     border-bottom: thick 13px solid rgb(46, 46, 58);
 }
 
-.moviesForYou h1 {
-    color: rgb(109, 122, 140);
-    font-family: "Satisfy", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 22px;
+.left {
+    margin-left: 20px;
 }
 
-.moviesForYou {
-    margin-top: 60px;
-    cursor: pointer;
+.right {
+    margin-right: 20px;
 }
 
 .boxMovies {
@@ -96,8 +91,15 @@ body {
     color: red;
 }
 
+.moviesForYou {
+    margin-top: 60px;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
 
-@media(max-width:650px) {
+@media (max-width: 640px) {
     .moviesForYou h1 {
         font-size: 18px;
     }
@@ -110,23 +112,23 @@ body {
         gap: 8px;
     }
 
-    .movie-card p {
-        font-size: 13px;
-    }
-
+    .movie-card p,
     .movie-cards p {
         font-size: 13px;
     }
 
-    .center {
-        flex-direction: column;
-    }
-
+    .center,
     .shift {
         flex-direction: column;
     }
 
     .riv {
         margin-top: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .moviesForYou {
+        width: 1000px;
     }
 }
